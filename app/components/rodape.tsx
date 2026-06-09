@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Rodape(){
     return (
@@ -9,9 +9,9 @@ export default function Rodape(){
                 <p>© 2026 Todos os direito reservados.</p>
             </div>
             <div className="flex flex-row items-end justify-center gap-2">
-                <Link href="https://www.instagram.com/alann.ti/" target="_blank">insta</Link>
-                <Link href="https://github.com/lanzinn3" target="_blank">git</Link>
-                <Link href="https://www.linkedin.com/in/alan-mendes3/" target="_blank" >linkedin</Link>
+                <Link href="https://www.instagram.com/alann.ti/" target="_blank" rel="noopener noreferrer"><FaInstagram size={24} className="hover:text-[#6D28D9] transition-colors duration-250 ease-in-out"/></Link>
+                <Link href="https://github.com/lanzinn3" target="_blank" rel="noopener noreferrer"><FaGithub size={24} className="hover:text-[#6D28D9] transition-colors duration-250 ease-in-out"/></Link>
+                <Link href="https://www.linkedin.com/in/alan-mendes3/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={24} className="hover:text-[#6D28D9] transition-colors duration-250 ease-in-out"/></Link>
             </div>
         </div>
     )

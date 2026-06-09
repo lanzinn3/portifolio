@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 font-montserrat items-center justify-center bg-zinc-800 overflow-hidden">
       <main>
-        <div className="flex fixed top-0 z-10 p-4 m-4 shadow-lg w-screen" >
+        <div className="flex flex-row fixed top-0 z-10 p-4 m-4 shadow-lg w-screen" >
           <Menu/>
         </div>
         <div className="h-screen w-screen flex items-center justify-center bg-linear-to-r from-zinc-950 from-55% to-zinc-900 to-45%">

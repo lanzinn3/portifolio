@@ -5,7 +5,7 @@ export default function SobrePage() {
   return (
     <div className=" text-white">
       <main>
-        <div className="">
+        <div>
             <h1 className="m-0"> Seja bem-vindo</h1>
             <h1 className="m-0"> Alan Sousa Mendes</h1>
             <p className="m-0">Desenvolvedor Full Stack</p>
