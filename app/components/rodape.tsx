@@ -3,7 +3,7 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Rodape(){
     return (
-        <div className="flex justify-center items-center bg-zinc-950 text-white text-xs font-montserrat p-4 gap-70">
+        <div className="flex justify-center items-center bg-zinc-950 text-white text-xs font-montserrat p-4 gap-20">
             <div className="flex flex-col items-start justify-center gap-2">
                 <p>Alan Sousa Mendes - Técnico T.I | Desenvolvedor Web</p>
                 <p>© 2026 Todos os direitos reservados.</p>
