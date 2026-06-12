@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Portifolio",
   description: "Alan Sousa Mendes",
+  icons: {
+    icon: "/vercel.ico",
+  }
 };
 
 export default function RootLayout({

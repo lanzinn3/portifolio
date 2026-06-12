@@ -3,14 +3,18 @@ import Menu from "@/app/components/menu";
 
 export default function SobrePage() {
   return (
-    <div className=" text-white">
+    <div >
       <main>
-        <div>
-            <h1 className="m-0"> Seja bem-vindo</h1>
-            <h1 className="m-0"> Alan Sousa Mendes</h1>
-            <p className="m-0">Desenvolvedor Full Stack</p>
-            <p className="m-0">Técnico em Informática</p>
-            <p className="m-0">Bacharelado em Sistema de Informação</p>
+        <div className=" text-white text-center w-120 gap-6">
+          <p>
+            Prazer, me chamo <strong>Alan Sousa Mendes</strong>. Sou desenvolvedor Full Stack e Bacharel em Sistemas de Informação pela UNIFRAN. Minha trajetória na tecnologia começou com uma base sólida em hardware e infraestrutura.
+          </p>
+          <p>
+            Desde 2022, atuo na Prefeitura Municipal de São Joaquim da Barra (SP), onde gerenciava redes e realizava manutenções de sistemas complexos. Essa vivência prática me deu uma visão profunda sobre como a tecnologia funciona além do código, me tornando um profissional muito mais analítico.
+          </p>
+          <p>
+            Hoje, aplico todo esse conhecimento de infraestrutura no desenvolvimento web, criando aplicações robustas, escaláveis e focadas em solucionar problemas reais. Estou pronto e em constante evolução para integrar equipes de desenvolvimento e gerar impacto desde o primeiro dia.
+          </p>
         </div>
         
       </main>
