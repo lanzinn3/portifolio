@@ -1,20 +1,13 @@
-import Image from "next/image";
-import Alan from "@/app/image/alanformal.png";
+
 
 export default function SobrePage() {
   return (
-    <div className="w-full max-w-6xl px-6 py-20">
-      <div className="flex flex-col md:flex-row items-center gap-12">
+    <div className="w-full max-w-6xl px-6 py-20 hover:shadow-lg transition-all duration-300 rounded-2xl">
+      <div className="flex flex-col md:flex-row gap-5">
 
-        <div className="flex-shrink-0">
-          <div className="relative">
-            <div className="absolute -inset-2 bg-gradient-to-r from-[#6D28D9] to-purple-600 rounded-2xl blur-md opacity-50"></div>
-            <Image 
-              src={Alan} 
-              alt="Alan Sousa Mendes" 
-              className="relative w-70 h-70 md:w-80 md:h-80 rounded-2xl object-cover shadow-xl border-2 border-zinc-700"
-            />
-          </div>
+ 
+        <div className="">
+          <div className=" -inset-2 bg-linear-to-b from-[#6D28D9] to-transparent rounded-2xl w-1 h-50"></div>
         </div>
         
         <div className="flex-1 text-white font-montserrat space-y-6">
@@ -34,7 +27,7 @@ export default function SobrePage() {
             </p>
           </div>
           
-          <div className="h-1 w-32 bg-gradient-to-r from-[#6D28D9] to-transparent rounded-full"></div>
+          <div className="h-1 w-50 bg-linear-to-l from-[#6D28D9] to-transparent rounded-full"></div>
         </div>
       </div>
     </div>
