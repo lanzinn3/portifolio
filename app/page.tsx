@@ -28,36 +28,8 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  useEffect(() => {
-    const observerOptions = {
-      threshold: 0.2,
-      rootMargin: '0px 0px -50px 0px'
-    }
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1'
-          entry.target.style.transform = 'translateY(0)'
-          observer.unobserve(entry.target)
-        }
-      })
-    }, observerOptions)
 
-    paragraphRefs.current.forEach(ref => {
-      if (ref) {
-        observer.observe(ref)
-      }
-    })
-
-    return () => {
-      paragraphRefs.current.forEach(ref => {
-        if (ref) {
-          observer.unobserve(ref)
-        }
-      })
-    }
-  }, [])
   return (
     <div className="flex flex-col font-montserrat bg-zinc-800" >
       <main className="w-full">
@@ -86,39 +58,6 @@ export default function Home() {
           <section id="sobre" className="flex min-h-screen justify-center items-center">
             <SobrePage />
           </section>
-        </div>
-        <div className="flex flex-col items-center gap-50 text-white p-10">
-          <h1 className="text-4xl font-bold">Trajetória</h1>
-          <p 
-            ref={(el) => (paragraphRefs.current[0] = el)}
-            className="transition-all duration-700 ease-out"
-            style={{ opacity: 0, transform: 'translateY(20px)' }}
-          >Jan 2021 - Curso Técnico em T.I</p>
-          <p 
-            ref={(el) => (paragraphRefs.current[1] = el)}
-            className="transition-all duration-700 ease-out"
-            style={{ opacity: 0, transform: 'translateY(20px)' }}
-          >Jan 2022 - Bacharelado em Sitemas de Informação</p>
-          <p 
-            ref={(el) => (paragraphRefs.current[2] = el)}
-            className="transition-all duration-700 ease-out"
-            style={{ opacity: 0, transform: 'translateY(20px)' }}
-          >Jun 2022 - Prefeitura</p>
-          <p 
-            ref={(el) => (paragraphRefs.current[3] = el)}
-            className="transition-all duration-700 ease-out"
-            style={{ opacity: 0, transform: 'translateY(20px)' }}
-          >Ago 2025 - Supermercado</p>
-          <p 
-            ref={(el) => (paragraphRefs.current[4] = el)}
-            className="transition-all duration-700 ease-out"
-            style={{ opacity: 0, transform: 'translateY(20px)' }}
-          >Nov 2025 - Conclução do Curso</p>
-          <p 
-            ref={(el) => (paragraphRefs.current[5] = el)}
-            className="transition-all duration-700 ease-out"
-            style={{ opacity: 0, transform: 'translateY(20px)' }}
-          >Abr 2026 - Desenvolvedor Web e Técnico</p>
         </div>
         <div>
           <Rodape />
